@@ -1,12 +1,16 @@
 import heroImg from "../assets/hero.png";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import heroBg from "../assets/hero-bg.jpg";
 
 export default function Home() {
   return (
     <>
       {/* HERO */}
       <Navbar />
-      <section id="home" className="hero">
+      <section id="home" className="hero" style={{
+                                              backgroundImage: `url(${heroBg})`,
+                                            }}>
         <div className="hero-content">
           <span className="badge">Now Taking New Projects</span>
 
@@ -175,6 +179,7 @@ export default function Home() {
 
         <button className="primary-btn">Get In Touch</button>
       </section>
+      <Footer />
     </>
   );
 }
