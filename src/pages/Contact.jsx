@@ -8,9 +8,10 @@ import { useMeta } from "../hooks/useMeta";
 
 export default function Contact() {
   useMeta({
-    title: "Contact — Evanoo",
-    description: "Get in touch with Evanoo. Email vishnu.kumar@evanoo.in, message us on WhatsApp, or send an enquiry through the contact form."
-  });
+  title: "Contact Us | Evanoo Technologies",
+  description:
+    "Get in touch with Evanoo for website development, mobile apps, cloud hosting, SaaS platforms, AI solutions and enterprise software."
+});
 
   const [submitting, setSubmitting] = useState(false);
 
@@ -29,11 +30,15 @@ export default function Contact() {
       <section className="container mx-auto px-4 py-20 text-center sm:px-6 lg:px-8 lg:py-24">
         <p className="text-sm font-semibold uppercase tracking-wider text-primary">Contact</p>
         <h1 className="mx-auto mt-3 max-w-3xl text-4xl font-bold sm:text-5xl lg:text-6xl">
-          Let's build <span className="gradient-text">something great</span>
-        </h1>
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
-          Tell us a little about your project. We'll respond within one business day.
-        </p>
+  Let's Build Your Next
+  <span className="gradient-text"> Digital Solution</span>
+</h1>
+
+<p className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground">
+  Whether you need a website, mobile application, cloud hosting,
+  SaaS platform, AI solution, or custom software, our team is ready
+  to help bring your ideas to life.
+</p>
       </section>
 
       <section className="container mx-auto px-4 pb-20 sm:px-6 lg:px-8">
@@ -65,47 +70,89 @@ export default function Contact() {
           </form>
 
           {/* Info */}
-          <aside className="space-y-4 lg:col-span-2">
-            <a href="mailto:vishnu.kumar@evanoo.in" className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 transition-all hover:border-primary/40 hover:shadow-elegant">
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl gradient-hero text-primary-foreground">
-                <Mail className="h-5 w-5" />
-              </div>
-              <div className="min-w-0">
-                <div className="text-sm font-semibold">Email</div>
-                <div className="mt-0.5 truncate text-sm text-muted-foreground">vishnu.kumar@evanoo.in</div>
-              </div>
-            </a>
+          {/* Contact Information */}
+<aside className="space-y-5 lg:col-span-2">
 
-            <a href="https://wa.me/918083506050" target="_blank" rel="noreferrer noopener" className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 transition-all hover:border-primary/40 hover:shadow-elegant">
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-[#25D366] text-white">
-                <MessageCircle className="h-5 w-5" />
-              </div>
-              <div className="min-w-0">
-                <div className="text-sm font-semibold">WhatsApp</div>
-                <div className="mt-0.5 text-sm text-muted-foreground">Chat with us instantly</div>
-              </div>
-            </a>
+  {/* Email */}
+  <a
+    href="mailto:contact@evanoo.in"
+    className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-elegant"
+  >
+    <div className="grid h-12 w-12 place-items-center rounded-xl gradient-hero text-primary-foreground">
+      <Mail className="h-5 w-5" />
+    </div>
 
-            <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6">
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl gradient-hero text-primary-foreground">
-                <MapPin className="h-5 w-5" />
-              </div>
-              <div className="min-w-0">
-                <div className="text-sm font-semibold">Location</div>
-                <div className="mt-0.5 text-sm text-muted-foreground">Kolkata Sector V, India · Serving worldwide</div>
-              </div>
-            </div>
+    <div>
+      <h3 className="font-semibold">Email</h3>
+      <p className="mt-1 text-sm text-muted-foreground">
+        contact@evanoo.in
+      </p>
+      <p className="text-xs text-muted-foreground">
+        Response within one business day
+      </p>
+    </div>
+  </a>
 
-            <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6">
-              <div className="grid h-11 w-11 shrink-0 place-items-center rounded-xl gradient-hero text-primary-foreground">
-                <Phone className="h-5 w-5" />
-              </div>
-              <div className="min-w-0">
-                <div className="text-sm font-semibold">Business hours</div>
-                <div className="mt-0.5 text-sm text-muted-foreground">Mon–Fri · 9am – 7pm IST</div>
-              </div>
-            </div>
-          </aside>
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/919382451949?text=Hi%20Evanoo,%20I%20want%20to%20discuss%20my%20project."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary hover:shadow-elegant"
+  >
+    <div className="grid h-12 w-12 place-items-center rounded-xl bg-[#25D366] text-white">
+      <MessageCircle className="h-5 w-5" />
+    </div>
+
+    <div>
+      <h3 className="font-semibold">WhatsApp</h3>
+      {/* <p className="mt-1 text-sm text-muted-foreground">
+        +91 93824 51949
+      </p> */}
+      <p className="text-xs text-muted-foreground">
+        Quick support & project discussion
+      </p>
+    </div>
+  </a>
+
+  {/* Office */}
+  <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6">
+    <div className="grid h-12 w-12 place-items-center rounded-xl gradient-hero text-primary-foreground">
+      <MapPin className="h-5 w-5" />
+    </div>
+
+    <div>
+      <h3 className="font-semibold">Office</h3>
+      <p className="mt-1 text-sm text-muted-foreground">
+        Kolkata, West Bengal, India
+      </p>
+
+      <p className="text-xs text-muted-foreground">
+        Serving clients across India & Worldwide
+      </p>
+    </div>
+  </div>
+
+  {/* Business Hours */}
+  <div className="flex items-start gap-4 rounded-2xl border border-border bg-card p-6">
+    <div className="grid h-12 w-12 place-items-center rounded-xl gradient-hero text-primary-foreground">
+      <Phone className="h-5 w-5" />
+    </div>
+
+    <div>
+      <h3 className="font-semibold">Business Hours</h3>
+
+      <p className="mt-1 text-sm text-muted-foreground">
+        Monday – Friday
+      </p>
+
+      <p className="text-sm text-muted-foreground">
+        10:00 AM – 7:00 PM IST
+      </p>
+    </div>
+  </div>
+
+</aside>
         </div>
 
         {/* Map */}
@@ -124,7 +171,7 @@ export default function Contact() {
 
       {/* Floating WhatsApp */}
       <a
-        href="https://wa.me/918083506050"
+        href="https://wa.me/918083506050?text=Hi%20Evanoo,%20I%20want%20to%20discuss%20my%20project."
         target="_blank"
         rel="noreferrer noopener"
         aria-label="Chat on WhatsApp"
